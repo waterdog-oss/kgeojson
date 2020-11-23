@@ -8,11 +8,8 @@ import kotlinx.serialization.descriptors.SerialDescriptor
 import kotlinx.serialization.encoding.Decoder
 import kotlinx.serialization.encoding.Encoder
 
-abstract class GeoJsonCoordinates
-
-
 @Serializable
-class Position(val lng: Double, val lat: Double) : GeoJsonCoordinates() {
+data class Position(val lng: Double, val lat: Double) {
 
     @Serializer(forClass = Position::class)
     companion object : KSerializer<Position> {
