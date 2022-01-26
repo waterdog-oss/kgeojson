@@ -1,3 +1,5 @@
+![badge](https://maven-badges.herokuapp.com/maven-central/mobi.waterdog.kgeojson/kgeojson/badge.svg)
+
 # kgeojson
 
 A simple GeoJson library written in Kotlin.
